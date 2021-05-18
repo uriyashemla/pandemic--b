@@ -136,7 +136,7 @@ std::ostream &pandemic::operator<<(std::ostream &os, const Board &board)
     os << "the level of disease in the cities:" << std::endl;
     for (const auto &c : cities_colors)
     {
-        if (board.diseas.count(c.first))
+        if ((bool)board.diseas.count(c.first))
         {
             os << "\t" << city_to_string(c.first) << ":\t" << board.diseas.at(c.first) << std::endl;
         }
