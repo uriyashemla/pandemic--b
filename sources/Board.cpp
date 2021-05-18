@@ -4,7 +4,6 @@
 #include <string>
 
 #include "Board.hpp"
-#include "OperationsExpert.hpp"
 using namespace std;
 using namespace pandemic;
 
